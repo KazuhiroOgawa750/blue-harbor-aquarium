@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLUE HARBOR AQUARIUM | ホーム</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><span class="brand-icon">◉</span> BLUE HARBOR <small>AQUARIUM</small></a>
+      <nav aria-label="メインメニュー"><a class="current" href="index.html">ホーム</a><a href="#creatures">生きもの紹介</a><a href="ticket.html">入場料金</a></nav>
+      <div class="page-jump"><label for="page-select">ページ移動</label><select id="page-select"><option value="" selected>ページを選択</option><option value="index.html">ホーム</option><option value="ticket.html">入場料金</option></select></div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="overline">DISCOVER LIFE BENEATH THE WAVES</p>
+          <h1>海の世界に、<br><span>会いにいこう。</span></h1>
+          <p>青い海に暮らす、さまざまな生きものたち。<br>水族館で小さな発見を楽しもう。</p>
+          <div class="hero-actions"><a class="button primary" href="#creatures">生きものを見る <span>↓</span></a><a class="button secondary" href="ticket.html">料金を調べる ↗</a></div>
+          <p class="hero-note">※ 架空の施設を題材にした学習用サイトです。</p>
+        </div>
+        <img class="hero-visual" src="images/ocean.svg" alt="海中を泳ぐウミガメや魚のイラスト" width="760" height="580">
+      </div>
+    </section>
+
+    <section class="section info-section" id="guide">
+      <div class="container info-layout">
+        <div><p class="overline teal">VISIT INFORMATION</p><h2>ご利用案内</h2><p>開館時間やアクセスの情報をご案内します。<br>ボタンを押して詳細を確認してください。</p><button class="button primary" id="guide-button" type="button">詳しく見る ＋</button></div>
+        <div class="info-card"><div class="info-icon">◷</div><p class="info-label">OPEN EVERY DAY</p><strong>海と、もっと近くに。</strong><p>ゆっくり楽しめる、海辺の水族館。</p><div id="guide-detail" class="guide-detail" hidden><p><strong>開館時間</strong> 10:00 ～ 18:00</p><p><strong>最終入館</strong> 17:00</p><p><strong>アクセス</strong> みなと駅から徒歩8分（架空の施設です）</p></div></div>
+      </div>
+    </section>
+
+    <section class="section creatures-section" id="creatures">
+      <div class="container">
+        <div class="section-head"><div><p class="overline teal">MEET OUR SEA LIFE</p><h2>生きものたち</h2></div><p>ボタンで3種類の生きものを切り替えてみよう。</p></div>
+        <div class="creature-layout">
+          <div class="creature-image-wrap"><img id="creature-image" src="images/jellyfish.svg" alt="クラゲのイラスト" width="720" height="520"><span class="creature-counter"><span id="creature-number">01</span> / 03</span></div>
+          <div class="creature-info"><p class="overline teal">TODAY'S PICK</p><h3 id="creature-name">クラゲ</h3><p id="creature-description">ゆったりと水中を漂う、幻想的な生きものです。</p><div class="creature-buttons"><button id="creature-prev" class="button outline" type="button">← 前へ</button><button id="creature-next" class="button primary" type="button">次へ →</button></div><p class="help-text">画像・名前・説明文・番号が一緒に変わります。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="callout"><div class="container callout-inner"><div><p class="overline">PLAN YOUR VISIT</p><h2>海の世界への入場料金をチェック</h2><p>チケットの種類と枚数を選んで、合計金額を計算できます。</p></div><a class="button white" href="ticket.html">料金シミュレーション ↗</a></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span>BLUE HARBOR AQUARIUM</span><span>© 2027 BLUE HARBOR. Fictional educational website.</span></div></footer>
+  <aside id="notice-panel" class="notice-panel" aria-label="サイトのご案内"><p>このサイトはJavaScriptの学習用です。実在する施設ではありません。</p><button id="notice-close" class="notice-close" type="button">閉じる ×</button></aside>
+</body>
+</html>
